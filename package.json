@@ -1,0 +1,34 @@
+{
+  "name": "tree-sitter-snowflake-css",
+  "version": "0.0.0",
+  "description": "Subtle visual indicator of flakes",
+  "scripts": {
+    "test": "tree-sitter test && tree-sitter parse examples/*.css --quiet --time"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurmer/tree-sitter-snowflake-css.git"
+  },
+  "keywords": [
+    "snowflake",
+    "css"
+  ],
+  "author": "Aubrey Snider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aurmer/tree-sitter-snowflake-css/issues"
+  },
+  "homepage": "https://github.com/aurmer/tree-sitter-snowflake-css#readme",
+  "devDependencies": {
+    "tree-sitter-cli": "^0.16.5"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.*",
+      "file-types": [
+        "*"
+      ],
+      "injection-regex": "^css$"
+    }
+  ]
+}
